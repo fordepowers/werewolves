@@ -1,0 +1,45 @@
+.App {
+  background-image: url('./background.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  min-height: 100vh;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header {
+  font-family: "Merienda One";
+  font-size: calc(10px + 3vmin);
+  background-color: #040509 !important;
+}
+
+.black-gradient-top {
+  width: 100%;
+  height: 15%;
+  background-image: linear-gradient(to top, #04050900, #040509);
+  top: 0;
+  position: absolute;
+}
+
+.black-gradient-bottom {
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to bottom, #04050900, #040509);
+  bottom: 0;
+  position: fixed;
+}
+
+/* iPhone 6 Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .App {
+      background-image: url('./background.jpg');
+      background-size: cover;
+      background-position: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+}

@@ -1,0 +1,9 @@
+.Guide {
+}
+
+.accordion {
+    background-color: rgb(39, 39, 39) !important;
+}
+.accordion.collapse {
+    background-color: #0a0a0a !important;
+}
