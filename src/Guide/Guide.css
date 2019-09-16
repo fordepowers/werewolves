@@ -1,9 +1,111 @@
 .Guide {
+    background-color: black;
 }
 
-.accordion {
-    background-color: rgb(39, 39, 39) !important;
+li {
+    list-style-type: disc;
+    font-size: 11pt;
+    text-align: left;
 }
-.accordion.collapse {
-    background-color: #0a0a0a !important;
+
+.top-heading {
+    text-align: center !important;
+    font-family: 'Merienda One', cursive;
+    text-shadow: 2px 2px 10px rgb(0, 0, 54);
+    font-size: 28pt;
+    background-color: transparent;
+    font-weight: 400;
+    margin-bottom: 25px !important;
+    padding: 3px;
+    line-height: .4 !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    font-size: 16pt;
+    font-family: 'Merienda One', cursive;
+    text-shadow: 2px 2px 10px rgb(0, 0, 54);
+    background-color: rgb(24, 24, 24);
+    font-weight: 400;
+    font-variant: normal;
+    text-decoration: none;
+    vertical-align: baseline;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px groove black;
+    color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion.active {
+    background-color: rgb(39, 39, 39);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding-left: 2px;
+    padding-right: 4px;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Unicode character for "plus" sign (+) */
+
+div.accordion:after {
+    content: '\02795';
+    font-size: 12px;
+    font-weight: 800;
+    color: whitesmoke;
+    text-shadow: none;
+    float: right;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+/* Unicode character for "minus" sign (-) */
+
+div.active:after {
+    content: "\2796";
+}
+
+p {
+    line-height: 1.38;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    text-align: left;
+    padding: 8px;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 0px 15px black;
+}
+
+span {
+    font-size: 16pt;
+    font-family: 'Merienda One', cursive;
+    text-shadow: 2px 2px 10px rgb(0, 0, 54);
+    background-color: transparent;
+    font-weight: 400;
+    font-variant: normal;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+.content {
+    font-size: 11pt;
+    font-family: Arial;
+}
+
+body {
+    background-color: #0a0a0a;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
 }

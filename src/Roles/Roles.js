@@ -2,12 +2,21 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Roles.css';
 
-function Roles() {
-  return (
-    <div className="Roles">
-      <p>ROLES</p>
-    </div>
-  );
+class Roles extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    }
+  }
+
+  
+  render() {
+    return (
+      <div className="Roles">
+        <p>ROLES</p>
+      </div>
+    );
+  }
 }
 
 export default Roles;
