@@ -5,13 +5,7 @@ import './Guide.css';
 class Guide extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
-    }
-
-    componentDidMount() {
-
+        this.state = {}
     }
 
     handleAccordionClick(e) {
@@ -37,7 +31,7 @@ class Guide extends React.Component {
                 <div className="section">
                     <div className="accordion" onClick={(e) => { this.handleAccordionClick(e) }}>{key}</div>
                     <div className="panel">
-                        <p className="content" dangerouslySetInnerHTML={{__html: value}}/>
+                        <p className="content" dangerouslySetInnerHTML={{ __html: value }} />
                     </div>
                 </div>
             );
@@ -45,15 +39,15 @@ class Guide extends React.Component {
 
         return (
             <div className="Guide">
-                <br/>
+                <br />
                 <div className="top-heading">
                     <h2>Werewolves</h2>
                     <span>A Narrator&rsquo;s Guide</span>
                 </div>
                 {sections}
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
             </div>
         )
     };
